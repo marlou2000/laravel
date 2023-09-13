@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans:wght@300&family=Raleway:wght@200&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container-create-post .create-post-h1{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.main-container-create-post form{
+    margin-top: 20px;
+}
+
+.main-container-create-post form .textarea-container{
+    display: flex;
+}
+
+.main-container-create-post form label{
+    display: inline-block;
+    width: 50px;
+    font-size: 14px;
+}
+
+.main-container-create-post form input{
+    width: 340px;
+    margin-left: -4px;
+    padding: 5px;
+    margin-bottom: 7px;
+}
+
+.main-container-create-post form textarea{
+    padding: 4px;
+}
+
+.main-container-create-post form button{
+    margin-top: 20px;
+    width: 100px;
+    margin-left: 50px;
+    cursor: pointer;
+}

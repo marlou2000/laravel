@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans:wght@300&family=Raleway:wght@200&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.modify-posts-btn{
+    cursor: pointer;
+}
+
+.modify-done-btn-container{
+    display: none;
+}
+
+.modify-done-btn-container button{
+    cursor: pointer;
+}
+
+.post-container{
+    display: inline-block;
+    margin-top: -10px;
+}
+
+.h4-owner{
+    font-size: 11px;
+    font-weight: normal;
+    margin-left: 2px;
+}
+
+.post-container .body-container textarea{
+    padding: 5px;
+    font-size: 12px;
+    color: black;
+}
+
+.owner-container .owner{
+    font-style: italic;
+    font-size: 12px;
+}
+
+.owner-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.owner-container .modify-btn-container{
+    margin-bottom: 5px;
+    display: none;
+}
+
+.owner-container .modify-btn-container button{
+    cursor: pointer;
+}
+
+.post-container .save-cancel-btn-container{
+    margin-top: 10px;
+    display: none;
+}
+
+.post-container .save-cancel-btn-container button{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+.title{
+    font-size: 15px;
+}
+
+.body-container .body{
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.dates-container p{
+    font-size: 12px;
+}
