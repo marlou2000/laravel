@@ -17,6 +17,8 @@ class registerController extends Controller
             'password.confirmed' => 'The passwords do not match.',
         ]);
 
+        $existingUser = User::where('username', $validatedData['username'])->first();
+
         if ($request->has('username') && strlen($request->input('username')) < 6) {
             return redirect()->back()->withErrors(['username' => 'The username must be greater than 6 characters.']);
         }
@@ -27,6 +29,10 @@ class registerController extends Controller
 
         if ($request->has('password_confirmation') && strlen($request->input('password_confirmation')) < 6) {
             return redirect()->back()->withErrors(['password' => 'The password confirmation must be greater than 6 characters.']);
+        }
+
+        if ($existingUser) {
+            return redirect()->back()->withErrors(['usernameExist' => 'The username already exists.']);
         }
 
         try {

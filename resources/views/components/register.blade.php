@@ -13,6 +13,12 @@
             </div>
         @enderror
 
+        @error('usernameExist')
+            <div class="invalid-feedback">
+                {{ $message }}
+            </div>
+        @enderror
+
         @error('password')
             <div class="invalid-feedback">
                 {{ $message }} 
